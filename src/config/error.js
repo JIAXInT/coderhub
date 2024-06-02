@@ -3,6 +3,7 @@ const NAME_IS_ALREADY_EXISTED = "name_is_already_existed";
 const NAME_IS_NOT_EXISTED = "name_is_not_existed";
 const PASSWORD_IS_INCORRECT = "password_is_incorrect";
 const UNAUTHORIZED = "unauthorized";
+const OPERATION_IS_NOT_ALLOWED = "operation_is_not_allowed";
 
 module.exports = {
   NAME_OR_PASSWORD_IS_REQUIRED,
@@ -10,4 +11,5 @@ module.exports = {
   NAME_IS_NOT_EXISTED,
   PASSWORD_IS_INCORRECT,
   UNAUTHORIZED,
+  OPERATION_IS_NOT_ALLOWED,
 };

@@ -5,6 +5,7 @@ const {
   NAME_IS_NOT_EXISTED,
   PASSWORD_IS_INCORRECT,
   UNAUTHORIZED,
+  OPERATION_IS_NOT_ALLOWED,
 } = require("../config/error");
 
 app.on("error", (error, ctx) => {
@@ -31,6 +32,11 @@ app.on("error", (error, ctx) => {
     case UNAUTHORIZED:
       code = -1005;
       message = "无效的token或token已过期";
+      break;
+
+    case OPERATION_IS_NOT_ALLOWED:
+      code = -1006;
+      message = "没有权限，操作不允许";
       break;
   }
 
